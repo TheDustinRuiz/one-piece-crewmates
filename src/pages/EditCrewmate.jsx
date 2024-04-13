@@ -52,7 +52,7 @@ const EditCrewmate = () => {
      return (
      <div>
           <h2>Edit Crewmate</h2>
-          <form className='form-container' onSubmit={updateCrewmate}>
+          <form className='form-container' autoComplete="off" onSubmit={updateCrewmate}>
                <label htmlFor="name">Name:</label>
                <input
                     type="text"

@@ -32,7 +32,7 @@ const CreateCrewmate = () => {
           <div>
                <h2>Create New Crewmate</h2>
                {showMessage && <p>Crewmate created successfully!</p>}
-               <form className='form-container' onSubmit={createCrewmate}>
+               <form className='form-container' autoComplete="off" onSubmit={createCrewmate}>
                     <label htmlFor="name">Name:</label>
                     <input
                          type="text"

@@ -5,19 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -44,16 +31,65 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
+  background-image: url('public/OP-background4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: scroll;
   margin: 0;
   padding: 0;
   color: #333;
 }
 
-.header {
-  background-color: #d32f2f;
+h2 {
+  display: inline-block;
   color: #fff;
+  background-color: rgba(135, 206, 235, 0.6);
+  box-shadow: 0 2px 4px rgba(135, 206, 235, 0.6);
+  border: 2px solid rgba(135, 206, 235, 0.8);
+  border-radius: 5px; 
+  padding: 2px 50px; 
+}
+
+.nav-bar {
+  background-color: rgba(135, 206, 235, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.nav-bar a {
+  color: #fff;
+  margin: 0 20px;
+}
+
+.nav-bar button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-bar button:hover {
+  background-color: rgba(47, 47, 211, 0.5);
+}
+
+.header {
+  background-color: rgba(47, 47, 211, 0.8);
+  color: #fff;
+  margin-top: 4rem;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 8px; 
 }
 
 .header h1 {
@@ -61,20 +97,10 @@ body {
 }
 
 .form-container {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-container h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #d32f2f;
-}
-
-.form-group {
-  margin-bottom: 20px;
 }
 
 label {
@@ -87,7 +113,8 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
 }
 
 select {
@@ -96,7 +123,8 @@ select {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
 }
 
 button {
@@ -112,7 +140,15 @@ button {
 }
 
 button:hover {
-  background-color: #6DA9D2;
+  background-color: rgba(135, 206, 235, 0.8);
+}
+
+.edit-crew-btn {
+  position: relative;
+  top: -25px; 
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  margin-bottom: 30px;
 }
 
 li {
@@ -121,12 +157,16 @@ li {
 }
 
 .list-item {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #333;
+}
+
+.list-item:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .list-item h3 {
@@ -137,6 +177,7 @@ li {
 
 .list-item p {
   margin: 0;
+  font-family: 'Times New Roman';
 }
 
 .delete-btn {
@@ -151,4 +192,21 @@ li {
 
 .delete-btn:hover {
   background-color: #8e0000;
+}
+
+.character-image {
+  width: 150px;
+  height: auto;
+}
+
+.crewmate-info {
+  background-color: rgba(135, 206, 235, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.crewmate-info p {
+  margin: 5px 0;
+  font-size: 16px;
 }
